@@ -32,8 +32,8 @@
 ***
 
 ### ***Screenshots*** 
-#### *<insert pic of finished project>*
-![]()
+#### *Component Hierarchy Diagram*
+![Component Hierarchy Diagram](https://i.imgur.com/pL5r6z2.png)
 
 ***
 
