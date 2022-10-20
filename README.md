@@ -35,6 +35,10 @@
 #### *Component Hierarchy Diagram*
 ![Component Hierarchy Diagram](https://i.imgur.com/pL5r6z2.png)
 
+
+#### *ERD*
+![ERD](https://i.imgur.com/NARev6o.png)
+
 ***
 
 ### ***Future Updates***
