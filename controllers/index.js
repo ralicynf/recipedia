@@ -16,9 +16,18 @@ const createRecipe = async (req, res) => {
 }
 
 const createType = async (req, res) => {
-
+    try {
+        const type = await new FoodType(req.body)
+        await type.save()
+        return res.status(201).json({
+            type,
+        });
+    } catch (error) {
+        return res.status(500).send(error.message)
+    }
 }
 
 module.exports = {
-    createRecipe
+    createRecipe,
+    createType,
 }
