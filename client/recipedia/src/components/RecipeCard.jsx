@@ -1,9 +1,8 @@
-
-
 const RecipeCard = (props) => {
 
     return (
-        <div className="recipe-card-image" onClick={props.onClick}>
+        <div className="recipe-card" onClick={props.onClick}>
+
             <div className="recipe-image">
                 <img src={props.image} alt={props.name} />
             </div>
@@ -16,3 +15,5 @@ const RecipeCard = (props) => {
 }
 
 export default RecipeCard
+
+//want to have recipe card go to the recipe details on click

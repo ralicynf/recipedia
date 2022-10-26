@@ -1,10 +1,19 @@
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
-// import router from '../../../../routes'
-//router.get('/recipes/:id', controllers.getRecipeById)
-
+import axios from 'axios'
 
 const RecipeDetails = (props) => {
+    let { recipeId } = useParams()
+
+    const [recipeDetails, setRecipeDetails] = useState(null)
+
+    const getRecipeDetails = async () => {
+        const response = await axios.get(`http://localhost:3001/recipedia/recipes/${recipeId}`)
+        setRecipeDetails(response.data)
+    }
+    useEffect(() => {
+        getRecipeDetails()
+    }, [recipeId])
 
     return (
         <div>

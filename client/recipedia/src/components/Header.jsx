@@ -16,9 +16,6 @@ const Header = () => {
 
 export default Header
 
-/* <Link to='/'>Home</Link>
-<Link to='/recipelist'>Recipe List</Link>
-<Link to='/resources'>Resources</Link> */
 
 // <Route path='/' element={<Home />} />
 //           <Route path='/recipes' element={<RecipeList />} />

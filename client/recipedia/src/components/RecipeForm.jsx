@@ -16,10 +16,9 @@ const RecipeForm = (props) => {
 
     const handleSubmit = async (event) => {
         event.preventDefault()
-        let res = await axios.post('http://localhost:3001/recipes', formState)
+        let res = await axios.post(`http://localhost:3001/recipedia/recipes`, formState)
         console.log(res.data)
         setFormState(startState)
-        
     }
 
     const handleChange = (event) => {

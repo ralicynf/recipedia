@@ -32,3 +32,13 @@ form {
   flex-direction: column;
   margin: 50px 100px;
 }
+
+.r-flex {
+  display: flex;
+  flex-direction: column;
+  max-width: 100px
+}
+
+.recipe-image {
+  
+}

@@ -1,6 +1,6 @@
 const express = require('express');
-const cors = require('cors')
-const logger = require('morgan')
+//const cors = require('cors');
+//const logger = require('morgan')
 const routes = require('./routes');
 const db = require('./db');
 const Recipe = require('./models/Recipe');
@@ -10,13 +10,13 @@ const PORT = process.env.PORT || 3001;
 const app = express();
 
 
-app.use(cors());
+//app.use(cors());
 app.use(express.json());
-app.use(logger('dev'));
+//app.use(logger('dev'));
 
 app.use('/recipedia', routes);
 
-app.get('/recipes', async (req, res) => {
+app.get('/allrecipes', async (req, res) => {
     let recipes = await Recipe.find({})
     res.send(recipes)
 })
@@ -27,10 +27,14 @@ app.post('/recipes', async (req, res) => {
     res.send(newRecipe)
 })
 
+app.get('/recipes/:id', async (req, res) => {
+    let recipe = await Recipe.find({id})
+    res.send(recipe)
+}) 
+
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
 app.listen(PORT, () => console.log(`Listening on port: ${PORT}`))
-
 
 // router.get('/', (req, res) => res.send('This is root!'))
 // router.post('/recipes', controllers.createRecipe)
