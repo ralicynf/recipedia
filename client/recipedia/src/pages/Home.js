@@ -3,11 +3,11 @@ import { useState, useEffect } from 'react'
 import axios from 'axios'
 
 
-const Home = () => {
+const Home = (props) => {
 
     return (
         <div>
-            <div className="">
+            <div className="recipes-flex">
 
             </div>
         </div>

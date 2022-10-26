@@ -27,3 +27,8 @@ header {
   background-color: lavender;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 100px;
+}
