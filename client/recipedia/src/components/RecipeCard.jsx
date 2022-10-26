@@ -2,7 +2,13 @@
 
 const RecipeCard = (props) => {
 
-    return
+    return (
+        <div className="recipe-card">
+            <div>
+                
+            </div>
+        </div>
+    )
 
 }
 
