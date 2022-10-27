@@ -4,6 +4,7 @@ const FoodType = require('../models/FoodType');
 
 
 const createRecipe = async (req, res) => {
+    console.log("hello")
     try {
         const recipe = await new Recipe(req.body)
         await recipe.save()
@@ -13,7 +14,6 @@ const createRecipe = async (req, res) => {
     } catch (error) {
         return res.status(500).send(error.message)
     }
-
 }
 
 const getAllRecipes = async (req, res) => {

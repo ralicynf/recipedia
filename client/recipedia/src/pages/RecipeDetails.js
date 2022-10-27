@@ -10,7 +10,7 @@ const RecipeDetails = (props) => {
     const getRecipeDetails = async () => {
         const response = await axios.get(`http://localhost:3001/recipedia/recipes/${id}`)
         console.log(response)
-        setRecipeDetails(response.data.recipes)
+        setRecipeDetails(response.data.recipe)
     }
     
     useEffect(() => {
