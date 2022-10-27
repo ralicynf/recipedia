@@ -38,6 +38,11 @@ app.get('/resources', async (req, res) => {
     res.send(resources)
 })
 
+app.put('/recipes/:id', async (req, res) => {
+    
+
+})
+
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
 app.listen(PORT, () => console.log(`Listening on port: ${PORT}`))

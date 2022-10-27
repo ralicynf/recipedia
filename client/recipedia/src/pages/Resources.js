@@ -19,7 +19,7 @@ const Resources = (props) => {
     return (
       <div>
         <div>
-            <h1>Resources</h1>
+            <h1>ABC's of Cooking</h1>
         </div>
         <div>
             {resources.map((result) =>
