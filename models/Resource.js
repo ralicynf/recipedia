@@ -1,5 +1,4 @@
 const mongoose = require('mongoose');
-const Resource = require('./Resource');
 
 const Schema = mongoose.Schema 
 

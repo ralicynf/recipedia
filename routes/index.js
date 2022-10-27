@@ -9,6 +9,6 @@ router.get('/allrecipes', controllers.getAllRecipes)
 router.get('/recipes/:id', controllers.getRecipeById)
 router.put('/recipes/:id', controllers.updateRecipe)
 router.delete('/recipes/:id', controllers.deleteRecipe)
-//router.get('/resources', controllers.getResources)
+router.get('/resources', controllers.getResources)
 
 module.exports = router;

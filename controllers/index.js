@@ -1,6 +1,6 @@
 const Recipe = require('../models/Recipe');
 const FoodType = require('../models/FoodType');
-//const Resource = require('../models/Resource')
+const Resource = require('../models/Resource')
 
 
 const createRecipe = async (req, res) => {
@@ -75,14 +75,14 @@ const createType = async (req, res) => {
     }
 }
 
-// const getResources = async (req, res) => {
-//     try {
-//         const resources = await Resource.find()
-//         return res.status(200).json({resources})
-//     } catch (error) {
-//         return res.status(500).send(error.message)
-//     }
-// }
+const getResources = async (req, res) => {
+    try {
+        const resources = await Resource.find()
+        return res.status(200).json({resources})
+    } catch (error) {
+        return res.status(500).send(error.message)
+    }
+}
 
 
 module.exports = {
@@ -92,5 +92,5 @@ module.exports = {
     getRecipeById,
     updateRecipe,
     deleteRecipe,
-    //getResources
+    getResources
 }
