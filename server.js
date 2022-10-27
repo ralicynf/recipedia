@@ -4,6 +4,7 @@ const logger = require('morgan')
 const routes = require('./routes');
 const db = require('./db');
 const Recipe = require('./models/Recipe');
+const Resource = require('./models/Resource');
 
 const PORT = process.env.PORT || 3001; 
 
@@ -32,7 +33,10 @@ app.get('/recipes/:id', async (req, res) => {
     res.send(recipe)
 }) 
 
-
+app.get('/resources', async (req, res) => {
+    let resources = await Resource.find({})
+    res.send(resources)
+})
 
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
