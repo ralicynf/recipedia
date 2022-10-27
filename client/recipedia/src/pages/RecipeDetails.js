@@ -43,7 +43,7 @@ const RecipeDetails = (props) => {
                     <h3>Submitted By : {recipeDetails.submittedBy}</h3>
                 </div>
             </div>
-            ) : <h1>Not Found.</h1>}
+            ) : <h1>Not Found.</h1>}            
         </div>
     )
 }

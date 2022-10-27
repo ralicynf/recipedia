@@ -75,11 +75,22 @@ const createType = async (req, res) => {
     }
 }
 
+// const getResources = async (req, res) => {
+//     try {
+//         const resources = await Resource.find()
+//         return res.status(200).json({resources})
+//     } catch (error) {
+//         return res.status(500).send(error.message)
+//     }
+// }
+
+
 module.exports = {
     createRecipe,
     createType,
     getAllRecipes,
     getRecipeById,
     updateRecipe,
-    deleteRecipe
+    deleteRecipe,
+    //getResources
 }

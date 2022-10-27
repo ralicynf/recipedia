@@ -24,7 +24,13 @@
 }
 
 header {
-  background-color: lavender;
+  background-color: rosybrown;
+  color: solid white;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-evenly;
+
 }
 
 form {
@@ -39,3 +45,15 @@ form {
   max-width: 100px
 }
 
+img {
+  width: 400px
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin: 30px;
+  text-align: center;
+  background-color: rosybrown
+}
