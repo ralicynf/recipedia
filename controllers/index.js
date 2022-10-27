@@ -29,6 +29,7 @@ const getRecipeById = async (req, res) => {
     try {
         const { id } = req.params
         const recipe = await Recipe.findById(id)
+        res.setHeader("Access-Control-Allow-Origin", "http://localhost:3000"); 
         if (recipe) {
             return res.status(200).json({recipe})
         }

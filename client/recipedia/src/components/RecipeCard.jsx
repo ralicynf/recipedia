@@ -1,7 +1,7 @@
 const RecipeCard = (props) => {
 
     return (
-        <div className="recipe-card" onClick={props.onClick}>
+        <div className="recipe-card" onClick={ () => {props.onClick(props.id)}}>
 
             <div className="recipe-image">
                 <img src={props.image} alt={props.name} />

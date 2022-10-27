@@ -30,6 +30,7 @@ const Home = (props) => {
                     {recipes.map((result) => 
                     <RecipeCard 
                         key={result._id}
+                        id={result._id}
                         name={result.name}
                         image={result.image}
                         onClick={viewRecipeDetails}

@@ -32,34 +32,34 @@ const RecipeForm = (props) => {
                     <input 
                         onChange={handleChange}  
                         type="text"
-                        id="name-text"
+                        id="name"
                         value={formState.name}
                     />
                 <label htmlFor="Image Link">Image:</label>
                     <input 
                         onChange={handleChange}
                         type="text"
-                        id="image-link"
+                        id="image"
                         value={formState.image}  
                     />
                 <label htmlFor="Prep Time">Prep Time:</label>
                     <input 
                         onChange={handleChange} 
                         type="text"  
-                        id="prep-text"
+                        id="prep"
                         value={formState.prepTime}
                     />
                 <label htmlFor="Cook Time">Cook Time:</label>
                     <input 
                         onChange={handleChange}  
                         type="text"  
-                        id="cook-time-text"
+                        id="cookTime"
                         value={formState.cookTime}
                     />
                 <label htmlFor="Ingredients">Ingredients:</label>
                     <textarea 
                         onChange={handleChange} 
-                        id="add-ingredients" 
+                        id="ingredients" 
                         cols="30" 
                         rows="10" 
                         value={formState.ingredients}
@@ -67,7 +67,7 @@ const RecipeForm = (props) => {
                 <label htmlFor="Instructions">Instructions:</label>
                     <textarea 
                         onChange={handleChange}  
-                        id="add-instructions" 
+                        id="instructions" 
                         cols="30" 
                         rows="10"
                         value={formState.instructions}
@@ -76,7 +76,7 @@ const RecipeForm = (props) => {
                     <input 
                         onChange={handleChange}  
                         type="text" 
-                        id="submit-text" 
+                        id="submittedBy" 
                         value={formState.submittedBy}
                     />
                 <button type="submit">Submit</button>
