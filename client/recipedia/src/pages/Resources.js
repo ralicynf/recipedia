@@ -1,8 +1,35 @@
-const Resources = () => {
+import ResourceCard from "../components/ResourceCard"
+import { useState, useEffect } from 'react'
+import axios from 'axios'
+
+const Resources = (props) => {
+
+    const [resources, setResources] = useState([])
+
+    const getResourceList = async () => {
+        const resources = await axios.get("http://localhost:3001/recipedia/resources")
+        console.log(resources)
+        setResources(resources.data.resources)
+    }
+
+    useEffect(() => {
+        getResourceList()
+    }, [])
 
     return (
       <div>
-        <h1>Resources</h1>
+        <div>
+            <h1>Resources</h1>
+        </div>
+        <div>
+            {resources.map((result) =>
+             <ResourceCard 
+                key={result._id}
+                id={result._id}
+                name={result.name}
+                definition={result.definition}
+             /> )}
+        </div>
       </div>
     )
   }
