@@ -19,6 +19,7 @@ const RecipeForm = (props) => {
         let res = await axios.post(`http://localhost:3001/recipedia/recipes`, formState)
         console.log(res.data)
         setFormState(startState)
+
     }
 
     const handleChange = (event) => {
@@ -46,7 +47,7 @@ const RecipeForm = (props) => {
                     <input 
                         onChange={handleChange} 
                         type="text"  
-                        id="prep"
+                        id="prepTime"
                         value={formState.prepTime}
                     />
                 <label htmlFor="Cook Time">Cook Time:</label>

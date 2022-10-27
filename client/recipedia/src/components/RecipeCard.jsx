@@ -17,4 +17,3 @@ const RecipeCard = (props) => {
 
 export default RecipeCard
 
-//want to have recipe card go to the recipe details on click
