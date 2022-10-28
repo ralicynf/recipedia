@@ -82,6 +82,8 @@ img {
   margin: 30px;
   text-align: center;
   background-color: rosybrown;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold
 }
 
 .form {
