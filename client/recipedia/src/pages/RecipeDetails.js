@@ -24,6 +24,7 @@ const RecipeDetails = (props) => {
 
     const getRecipeUpdate = async () => {
         const response = await axios.put(`http://localhost:3001/recipedia/recipes/${id}`)
+        //add second argument behind the call, like form or something
         console.log(response)
         setRecipeUpdate(response.data.recipe)
     }
