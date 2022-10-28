@@ -67,7 +67,7 @@ const RecipeDetails = (props) => {
             ) : <h1>Not Found.</h1>}  
 
             <div className="buttons">
-                <button onClick={goHome}>Edit</button>
+                <button>Edit</button>
                 <button onClick={deleteRecipe}>Delete</button>
             </div>        
         </div>

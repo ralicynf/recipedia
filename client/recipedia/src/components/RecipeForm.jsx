@@ -1,7 +1,14 @@
 import axios from 'axios'
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const RecipeForm = (props) => {
+    let navigate = useNavigate()
+
+    const goHome = () => {
+        navigate('/')
+    }
+
     const startState = {
         name: '',
         image: '',
@@ -19,7 +26,7 @@ const RecipeForm = (props) => {
         let res = await axios.post("http://localhost:3001/recipedia/recipes", formState)
         console.log(res.data)
         setFormState(startState)
-
+        goHome()
     }
 
     const handleChange = (event) => {
