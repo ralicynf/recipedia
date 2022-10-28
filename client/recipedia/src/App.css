@@ -105,7 +105,8 @@ button {
   background-color:rgb(109, 62, 62);
   color: #e7c8c0;
   margin: 10px;
-
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
 }
 
 input {
