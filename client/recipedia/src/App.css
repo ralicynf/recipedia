@@ -84,7 +84,8 @@ img {
   text-align: center;
   background-color: #759EBE;
   font-family: 'Raleway', sans-serif;
-  font-weight: bold
+  font-weight: bold;
+  border: 2px solid #164366
 }
 
 .form {
@@ -169,5 +170,7 @@ input {
   margin: 20px 100px
 }
 .recipe-card-name {
-  margin: 0 auto
+  margin: 20px ;
+  border: 2px solid #164366;
+
 }
