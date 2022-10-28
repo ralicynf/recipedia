@@ -27,26 +27,26 @@
 
 ### ***Getting Started***
 
-##### To start, you can navigate through the existing recipes on Recipedia. You are able to search recipes or scroll through them based on recipe type, total preparation and cooking time, or an alphabetized list.
-##### To create a new recipe, you can click to the form that allows for recipe creation. 
+##### To start, you can navigate through the existing recipes on Recipedia. Recipes are listed in the homepage and show an image and the food. You can click on each recipe in order to view the details of the recipe.
+##### To create a new recipe, you can click to the form that allows for recipe creation. Recipes can be edited or deleted from the recipe details page.
 ##### A Trello board was used to keep track of development progress and can be viewed [here](https://trello.com/b/I3xYgzyv/recipedia).
 ##### The project itself was deployed and can be viewed [here](URL).
 ***
 
 ### ***Screenshots*** 
 #### *Component Hierarchy Diagram*
-![Component Hierarchy Diagram](https://i.imgur.com/pL5r6z2.png)
+![Component Hierarchy Diagram](https://i.imgur.com/Lv7t3fo.png)
 
 
 #### *ERD*
-![ERD](https://i.imgur.com/NARev6o.png)
+![ERD](https://i.imgur.com/Kfo5ZZW.png)
 
 ***
 
 ### ***Future Updates***
 
-- [ ] Future Update 1
-- [ ] Future Update 2
+- [ ] Adding Categories for receipes (in progress)
+- [ ] Adding Drinks as a separate model with new section
 
 ***
 
