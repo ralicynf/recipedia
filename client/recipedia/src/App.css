@@ -1,41 +1,55 @@
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
+body {
+  background-color: #fff3f0;
+  text-align: center;
 }
 
 header {
   background-color: rosybrown;
   color: solid white;
- 
-
+  height: 70px;
+  align-items: center;
+  justify-content: center;
 }
+
 main {
   background-color: #fff3f0;
   text-align: center;
-  color: rgb(109, 62, 62)
+  color: rgb(109, 62, 62);
+  margin: 40px 100px
+}
+
+#logo {
+  font-family: 'Raleway Dots', cursive;
+  font-size: 60px;
 }
 
 nav {
+  display: grid;
+  grid-template-columns: [col1-start] 25% [col1-end col2-start] 45% [col2-end col3-start] 30% [col3-end];
+  color: solid white;
+}
+
+#nav-logo {
+  text-align:left;
+  margin: 0px 10px;
+  font-family: 'Raleway Dots', cursive; 
+}
+
+.nav-links {
+  text-align: right;
   display: flex;
   flex-direction: row;
-  text-align: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 10px;
+  font-family: 'Raleway', sans-serif;
 }
+
+Link {
+  color: solid white;
+
+}
+
 
 form {
   display: flex;
@@ -43,15 +57,21 @@ form {
   margin: 50px 100px;
 }
 
+#r-card {
+  text-align: center
+}
+
 .r-flex {
   display: flex;
-  flex-direction: column;
+  flex-flow: wrap;
+  text-align: center;
   color: white;
-  
+  justify-content: center;
 }
 
 img {
-  width: 400px
+  width: 300px;
+  margin: 30px 10px
 }
 
 .box {
@@ -61,4 +81,14 @@ img {
   margin: 30px;
   text-align: center;
   background-color: rosybrown;
+}
+
+.form {
+  background-color: #e7c8c0;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+}
+
+#add-new {
+  
 }

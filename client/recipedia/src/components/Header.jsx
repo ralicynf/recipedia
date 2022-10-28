@@ -5,9 +5,15 @@ const Header = () => {
     return (
         <header>
             <nav>
-                <Link to='/' >Home </Link>
-                <Link to='/recipes/addRecipe' >Add Recipe</Link>
-                <Link to='/resources' > Resources</Link>
+                <div id="nav-logo">
+                    <h1>Recipedia</h1>
+                </div>
+                <div></div>
+                <div className="nav-links">
+                    <Link to='/'>Home </Link>
+                    <Link to='/recipes/addRecipe' >Add Recipe</Link>
+                    <Link to='/resources' > Resources</Link>
+                </div>
             </nav>
         </header>
 

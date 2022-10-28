@@ -25,7 +25,7 @@ const Home = (props) => {
     return (
         <div>
             <div className="recipes-flex">
-                <h1>Recipes</h1>
+                <h1 id="logo">Recipe List</h1>
                 <section className='r-flex'>
                     {recipes.map((result) => 
                     <RecipeCard 

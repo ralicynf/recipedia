@@ -39,8 +39,15 @@ app.get('/resources', async (req, res) => {
 })
 
 app.put('/recipes/:id', async (req, res) => {
-    
+    console.log('updated', req.body)
+    let update = await Recipe.findByIdAndUpdate(`${id}`)
+    res.send(update)
+})
 
+app.delete('/recipes/:id', async (req, res) => {
+    console.log('deleted recipe', req.body)
+    let deleted = await Recipe.findByIdAndDelete(`${id}`)
+    res.send(deleted)
 })
 
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))

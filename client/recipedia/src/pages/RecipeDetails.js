@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import axios from 'axios'
+import { Routes, Route } from 'react-router-dom'
 
 const RecipeDetails = (props) => {
     let { id } = useParams()
@@ -17,8 +18,25 @@ const RecipeDetails = (props) => {
         getRecipeDetails()
     }, [id])
 
+    // const [recipeUpdate, setRecipeUpdate] = useState()
 
+    // const getRecipeUpdate = async () => {
+    //     const response = await axios.put(`http://localhost:3001/recipedia/recipes/${id}`)
+    //     console.log(response)
+    //     setRecipeUpdate(response.data.recipe)
+    // }
 
+    const goHome = async () => {
+
+    }
+ 
+    const deleteRecipe = async () => {
+        const deleted = await axios.delete(`http://localhost:3001/recipedia/recipes/${id}`)
+        console.log('Recipe has been deleted.')
+
+    }
+
+ 
     return (
         <div>
             {recipeDetails ? (
@@ -40,12 +58,12 @@ const RecipeDetails = (props) => {
                     <p>Instructions: {recipeDetails.instructions}</p>
                 </section>
                 <div>
-                    <h3>Submitted By : {recipeDetails.submittedBy}</h3>
+                    <h5>Submitted By : {recipeDetails.submittedBy}</h5>
                 </div>
             </div>
             ) : <h1>Not Found.</h1>}    
             <div className="buttons">
-                <button>Update</button>
+                <button>Edit</button>
                 <button>Delete</button>
             </div>        
         </div>

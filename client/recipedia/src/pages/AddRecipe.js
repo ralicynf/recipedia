@@ -22,7 +22,7 @@ const AddRecipe = () => {
     }, [])
 
     return (
-        <div>
+        <div className="form">
             <h2>Add New Recipe</h2>
             <RecipeForm />
         </div>
