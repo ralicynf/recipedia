@@ -71,7 +71,8 @@ form {
 
 img {
   width: 300px;
-  margin: 30px 10px
+  margin: 30px 10px;
+  border: 5px solid rgb(109, 62, 62) 
 }
 
 .box {
@@ -99,7 +100,9 @@ img {
 
 button {
   background-color:rgb(109, 62, 62);
-  color: #e7c8c0
+  color: #e7c8c0;
+  margin: 10px;
+
 }
 
 input {
@@ -108,15 +111,34 @@ input {
 
 .box-resource {
   border:solid rgb(109, 62, 62);
-  padding: 10px;
+  margin: 10px;
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
 }
 
-.resource-card {
-  margin: 10px
+#resource-logo {
+  font-family: 'Raleway Dots', cursive;
+  font-weight: bold;
 }
 
-.the-r-card {
-  
+.time {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border: 2px solid rgb(109, 62, 62);
+  margin: 40px
+}
+
+.recipe-details {
+  border: solid rgb(109, 62, 62)
+}
+
+.ingredients {
+  margin: 30px;
+  text-align: left;
+}
+
+.instructions {
+  margin: 30px;
+  text-align: left;
 }
