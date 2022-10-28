@@ -20,6 +20,8 @@
 * React
 * Insomnia
 * Mongoose
+* MongoDB
+* Express
 
 ***
 

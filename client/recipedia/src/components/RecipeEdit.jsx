@@ -1,31 +1,43 @@
 import axios from 'axios'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 
 const RecipeEdit = (props) => {
+    let { id } = useParams()
+    console.log(id)
     let navigate = useNavigate()
 
     const goHome = () => {
         navigate('/')
     }
 
-    const startState = {
-        name: `${props.name}`,
-        image: `${props.image}`,
-        prepTime: `${props.prepTime}`,
-        cookTime: `${props.cookTime}`,
-        ingredients: `${props.ingredients}`,
-        instructions: `${props.instructions}`,
-        submittedBy: `${props.submittedBy}`
+    const [recipeDetails, setRecipeDetails] = useState()
+    const [formState, setFormState] = useState({
+        name: "",
+        image: "",
+        prepTime: "",
+        cookTime: "",
+        ingredients: "",
+        instructions: "",
+        submittedBy: ""
+    } )
+
+    const getRecipeDetails = async () => {
+        const response = await axios.get(`http://localhost:3001/recipedia/recipes/${id}`)
+        console.log(response)
+        setRecipeDetails(response.data.recipe)
+        setFormState(response.data.recipe)
     }
 
-    const [formState, setFormState] = useState(startState)
+    useEffect(() => {
+        getRecipeDetails()
+    }, [])
 
     const handleSubmit = async (event) => {
         event.preventDefault()
-        let res = await axios.post(`http://localhost:3001/recipedia/recipes/${id}`, formState)
+        let res = await axios.put(`http://localhost:3001/recipedia/recipes/${id}`, formState)
         console.log(res.data)
-        setFormState(startState)
         goHome()
     }
 
@@ -33,15 +45,7 @@ const RecipeEdit = (props) => {
         setFormState({ ...formState, [event.target.id]: event.target.value});
     };
 
-    const [recipeUpdate, setRecipeUpdate] = useState()
-
-    const getRecipeUpdate = async () => {
-        const response = await axios.put(`http://localhost:3001/recipedia/recipes/${id}`, formState)
-        console.log(response)
-        setRecipeUpdate(response.data.recipe)
-    }
-
-
+    
     return (
         <div className="the-form">
             <form onSubmit={handleSubmit}>
@@ -96,7 +100,7 @@ const RecipeEdit = (props) => {
                         id="submittedBy" 
                         value={formState.submittedBy}
                     />
-                <button type="submit">Submit</button>
+                <button type="submit">Update</button>
             </form>
         </div>
     )

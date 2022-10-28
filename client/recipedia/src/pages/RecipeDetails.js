@@ -20,20 +20,14 @@ const RecipeDetails = (props) => {
         getRecipeDetails()
     }, [id])
 
-    const [recipeUpdate, setRecipeUpdate] = useState()
-
-    const getRecipeUpdate = async () => {
-        const response = await axios.put(`http://localhost:3001/recipedia/recipes/${id}`)
-        //add second argument behind the call, like form or something
-        console.log(response)
-        setRecipeUpdate(response.data.recipe)
-    }
-
     const goHome = () => {
         navigate('/')
     }
- 
 
+    const editRecipe = () => {
+        navigate(`/recipes/${id}/edit`)
+    }
+ 
     const deleteRecipe = async () => {
         const deleted = await axios.delete(`http://localhost:3001/recipedia/recipes/${id}`)
         console.log(deleted)
@@ -68,7 +62,7 @@ const RecipeDetails = (props) => {
             ) : <h1>Not Found.</h1>}  
 
             <div className="buttons">
-                <button>Edit</button>
+                <button onClick={editRecipe}>Edit</button>
                 <button onClick={deleteRecipe}>Delete</button>
             </div>        
         </div>
