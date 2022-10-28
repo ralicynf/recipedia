@@ -36,11 +36,11 @@ const RecipeDetails = (props) => {
 
  
     return (
-        <div>
+        <div className="deets">
             {recipeDetails ? (
             <div className="recipe-details">
                 <div>
-                    <h1>{recipeDetails.name}</h1>
+                    <h1 id="recipe-name">{recipeDetails.name}</h1>
                 </div>
                 <section className='image-box'>
                     <img src={recipeDetails.image} alt={recipeDetails.name} />

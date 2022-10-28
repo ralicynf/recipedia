@@ -1,6 +1,7 @@
 body {
   background-color: #fff3f0;
   text-align: center;
+  font-weight: bold;
 }
 
 header {
@@ -15,7 +16,7 @@ main {
   background-color: #fff3f0;
   text-align: center;
   color: rgb(109, 62, 62);
-  margin: 40px 100px
+  margin: 40px 20px
 }
 
 #logo {
@@ -143,4 +144,17 @@ input {
 .instructions {
   margin: 30px;
   text-align: left;
+}
+
+.recipe-details {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold
+}
+
+#recipe-name {
+  font-weight: bold;
+}
+
+.deets {
+  margin: 30px 100px
 }
