@@ -8,8 +8,8 @@ const RecipeEdit = (props) => {
     console.log(id)
     let navigate = useNavigate()
 
-    const goHome = () => {
-        navigate('/')
+    const viewUpdatedRecipe = () => {
+        navigate(`/recipes/${id}`)
     }
 
     const [recipeDetails, setRecipeDetails] = useState()
@@ -38,7 +38,7 @@ const RecipeEdit = (props) => {
         event.preventDefault()
         let res = await axios.put(`http://localhost:3001/recipedia/recipes/${id}`, formState)
         console.log(res.data)
-        goHome()
+        viewUpdatedRecipe()
     }
 
     const handleChange = (event) => {

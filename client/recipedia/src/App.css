@@ -1,11 +1,11 @@
 body {
-  background-color: #fff3f0;
+  background-color: #D8E7F3;
   text-align: center;
   font-weight: bold;
 }
 
 header {
-  background-color: rosybrown;
+  background-color: #759EBE;
   color: solid white;
   height: 70px;
   align-items: center;
@@ -13,9 +13,9 @@ header {
 }
 
 main {
-  background-color: #fff3f0;
+  background-color: #D8E7F3;
   text-align: center;
-  color: rgb(109, 62, 62);
+  color: #164366;
   margin: 40px 20px
 }
 
@@ -73,7 +73,7 @@ form {
 img {
   width: 300px;
   margin: 30px 10px;
-  border: 5px solid rgb(109, 62, 62) 
+  border: 5px solid #164366
 }
 
 .box {
@@ -82,27 +82,27 @@ img {
   width: 400px;
   margin: 30px;
   text-align: center;
-  background-color: rosybrown;
+  background-color: #759EBE;
   font-family: 'Raleway', sans-serif;
   font-weight: bold
 }
 
 .form {
-  background-color: #e7c8c0;
+  background-color: #759EBE;
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
   margin: 5px; 
-  border: solid rgb(109, 62, 62);
+  border: solid #164366;
 }
 
 .the-form {
-  background-color: #e7c8c0;
+  background-color: #759EBE;
   margin: 10px;
 
 }
 
 button {
-  background-color:rgb(109, 62, 62);
+  background-color:#164366;
   color: #e7c8c0;
   margin: 10px;
   font-family: 'Raleway', sans-serif;
@@ -114,7 +114,7 @@ input {
 }
 
 .box-resource {
-  border:solid rgb(109, 62, 62);
+  border:solid #164366;
   margin: 40px;
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
@@ -134,12 +134,12 @@ input {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  border: 2px solid rgb(109, 62, 62);
+  border: 2px solid #164366;
   margin: 40px
 }
 
 .recipe-details {
-  border: solid rgb(109, 62, 62)
+  border: solid #164366
 }
 
 .ingredients {
@@ -167,4 +167,7 @@ input {
 
 .r-card-2 {
   margin: 20px 100px
+}
+.recipe-card-name {
+  margin: 0 auto
 }
