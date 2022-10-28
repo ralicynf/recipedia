@@ -114,7 +114,7 @@ input {
 
 .box-resource {
   border:solid rgb(109, 62, 62);
-  margin: 10px;
+  margin: 40px;
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
 }
@@ -122,6 +122,11 @@ input {
 #resource-logo {
   font-family: 'Raleway Dots', cursive;
   font-weight: bold;
+}
+
+.resource-card {
+  margin: 15px;
+  text-align: left
 }
 
 .time {
