@@ -23,7 +23,7 @@ const AddRecipe = () => {
 
     return (
         <div className="form">
-            <h2>Add New Recipe</h2>
+            <h2 id="add-new">Add New Recipe</h2>
             <RecipeForm />
         </div>
     )

@@ -87,8 +87,36 @@ img {
   background-color: #e7c8c0;
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
+  margin: 5px; 
+  border: solid rgb(109, 62, 62);
 }
 
-#add-new {
+.the-form {
+  background-color: #e7c8c0;
+  margin: 10px;
+
+}
+
+button {
+  background-color:rgb(109, 62, 62);
+  color: #e7c8c0
+}
+
+input {
+  margin: 6px 0px
+}
+
+.box-resource {
+  border:solid rgb(109, 62, 62);
+  padding: 10px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+}
+
+.resource-card {
+  margin: 10px
+}
+
+.the-r-card {
   
 }

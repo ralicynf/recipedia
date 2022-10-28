@@ -21,7 +21,7 @@ const Resources = (props) => {
         <div>
             <h1>ABC's of Cooking</h1>
         </div>
-        <div>
+        <div className='the-r-card'>
             {resources.map((result) =>
              <ResourceCard 
                 key={result._id}

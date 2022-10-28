@@ -28,6 +28,7 @@ const RecipeForm = (props) => {
 
 
     return (
+        <div className="the-form">
             <form onSubmit={handleSubmit}>
                 <label htmlFor="Recipe Name">Recipe Name:</label>
                     <input 
@@ -82,6 +83,7 @@ const RecipeForm = (props) => {
                     />
                 <button type="submit">Submit</button>
             </form>
+        </div>
     )
 }
 
