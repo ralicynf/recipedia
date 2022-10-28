@@ -50,10 +50,12 @@ const RecipeDetails = (props) => {
                     <h4>Cook Time : {recipeDetails.cookTime} </h4>
                 </section>
                 <section className='ingredients'>
-                    <p>Ingredients: {recipeDetails.ingredients}</p>
+                    <h3>Ingredients: </h3>
+                    <p>{recipeDetails.ingredients}</p>
                 </section>
                 <section className='instructions'>
-                    <p>Instructions: {recipeDetails.instructions}</p>
+                    <h3>Instructions: </h3>
+                    <p>{recipeDetails.instructions}</p>
                 </section>
                 <div>
                     <h5>Submitted By : {recipeDetails.submittedBy}</h5>
