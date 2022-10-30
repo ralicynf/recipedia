@@ -25,11 +25,3 @@ function App() {
 }
 
 export default App;
-
-
-// Fruit Plate
-// https://i.imgur.com/ywkb8TD.jpg
-// 5
-// 5
-// Strawberries, blueberries, Bitchin' Sauce Chocolate Flavor, mint
-// Pour chocolate sauce into a bowl. Surround nicely with strawberries and blueberries. Garnish with mint.
